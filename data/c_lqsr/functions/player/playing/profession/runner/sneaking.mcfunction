@@ -1,0 +1,3 @@
+execute if score @s lq.sbfight.runner.sneak matches 1..3 run particle dust 1 1 .1 1 ~ ~ ~ 1 1 1 0 3 force
+execute if score @s lq.sbfight.runner.sneak matches 1..3 run summon area_effect_cloud ~ ~ ~ {Particle:"entity_effect",Duration:6,Age:4,Color:16777215,Effects:[{Id:11,Amplifier:5b,Duration:2,ShowParticles:0b}]}
+execute unless predicate c_tfo:is_sneaking run scoreboard players reset @s lq.sbfight.runner.sneak

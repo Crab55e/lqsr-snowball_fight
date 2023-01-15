@@ -1,0 +1,2 @@
+data merge storage c_lqsr:status {nowMatchMaking:false,Playing:false,Players:{Red:0,Blue:0,Total:0},Professions:{Doctor:{alreadyChecked:false,PlayerMCID:"None"},Engineer:{alreadyChecked:false,PlayerMCID:"None"},Soldier:{alreadyChecked:false,PlayerMCID:"None"},Crafter:{alreadyChecked:false,PlayerMCID:"None"},Hunter:{alreadyChecked:false,PlayerMCID:"None"},Runner:{alreadyChecked:false,PlayerMCID:"None"}}}
+scoreboard players reset #lq.sbfight.time lq.sbfight.time

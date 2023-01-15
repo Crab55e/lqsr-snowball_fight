@@ -1,0 +1,5 @@
+execute store result score #lq.sbfight.health.blue lq.sbfight.temp run data get entity @e[type=snow_golem,tag=lq.sbfight.core.blue.main,limit=1]
+execute store result score #lq.sbfight.health.red lq.sbfight.temp run data get entity @e[type=snow_golem,tag=lq.sbfight.core.red.main,limit=1]
+execute if score #lq.sbfight.health.blue lq.sbfight.temp < #lq.sbfight.health.red lq.sbfight.temp run data merge storage c_lqsr:status {lastMatchStatus:{victoriedTeam:"赤"}}
+execute if score #lq.sbfight.health.blue lq.sbfight.temp > #lq.sbfight.health.red lq.sbfight.temp run data merge storage c_lqsr:status {lastMatchStatus:{victoriedTeam:"青"}}
+execute if score #lq.sbfight.health.blue lq.sbfight.temp = #lq.sbfight.health.red lq.sbfight.temp run data merge storage c_lqsr:status {lastMatchStatus:{victoriedTeam:"引き分け"}}

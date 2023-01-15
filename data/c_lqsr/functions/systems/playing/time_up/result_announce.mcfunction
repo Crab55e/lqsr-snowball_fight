@@ -1,0 +1,4 @@
+tellraw @a[predicate=c_lqsr:is_in_stage] [{"text": "==================================================\n","color": "gold"}]
+tellraw @a[predicate=c_lqsr:is_in_stage] [{"text": "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020勝利チーム : "},{"storage":"c_lqsr:status","nbt":"lastMatchStatus.victoriedTeam"}]
+tellraw @a[predicate=c_lqsr:is_in_stage] [{"text": "\n==================================================","color": "gold"}]
+playsound ui.toast.challenge_complete master @a[predicate=c_lqsr:is_in_stage] ~ ~ ~ 1 1.25 1

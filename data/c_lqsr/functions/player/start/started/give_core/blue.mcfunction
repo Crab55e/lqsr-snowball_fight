@@ -1,0 +1,2 @@
+give @s ghast_spawn_egg{CanPlaceOn:["#c_tfo:all"],display:{Name:'{"text":"青の拠点設置","italic":false}'},EntityTag:{id:"minecraft:area_effect_cloud",Age:20,Duration:0,Radius:0,Tags:["lq.sbfight.core","lq.sbfight.core.blue"]}}
+tellraw @a[predicate=c_lqsr:is_in_stage,tag=lq.sbfight.player.blue] ["",{"text": "[青] ","color": "blue"},{"selector":"@s"},"が拠点の設置場所を決めます"]
